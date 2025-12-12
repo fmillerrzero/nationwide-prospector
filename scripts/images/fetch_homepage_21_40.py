@@ -17,7 +17,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from src.config import BUILDING_DATA_PATH, IMAGES_DIR, MISSING_IMAGES_DIR, INDEX_HTML_PATH
 
 # API Keys
-GOOGLE_API_KEY = "REMOVED_GOOGLE_KEY"
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")
 SERPAPI_KEY = "9067cce44a4c4420272a960a5b4e07156032362dcee6bf2ea214cd3ef292abcd"
 
 # Paths - from centralized config
