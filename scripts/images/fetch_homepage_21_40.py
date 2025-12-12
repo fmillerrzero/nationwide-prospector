@@ -18,7 +18,7 @@ from src.config import BUILDING_DATA_PATH, IMAGES_DIR, MISSING_IMAGES_DIR, INDEX
 
 # API Keys
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")
-SERPAPI_KEY = "9067cce44a4c4420272a960a5b4e07156032362dcee6bf2ea214cd3ef292abcd"
+SERPAPI_KEY = os.environ.get("SERPAPI_KEY", "")
 
 # Paths - from centralized config
 BUILDING_DATA = str(BUILDING_DATA_PATH)

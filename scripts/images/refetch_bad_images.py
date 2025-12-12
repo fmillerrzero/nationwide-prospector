@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.config import BUILDING_DATA_PATH, MISSING_IMAGES_DIR
 
-SERPAPI_KEY = "9067cce44a4c4420272a960a5b4e07156032362dcee6bf2ea214cd3ef292abcd"
+SERPAPI_KEY = os.environ.get("SERPAPI_KEY", "")
 
 # Paths - from centralized config
 BUILDING_DATA = str(BUILDING_DATA_PATH)
